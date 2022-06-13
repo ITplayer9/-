@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;    /* 字体样式 */
+    height: 100%;
+    width: 100%;
+    background:url("../资源/目录页01.png");
+    background-size: cover;
+}
+.top{
+    /* 类选择器 */
+    height: 120px;
+    background:rgba(237, 237, 246, 0.4);
+    border-bottom:1px solid rgb(232, 222, 222);    /* 底部边框 */
+}
+.top .name{
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float:left;    /* 将图片放入最左边 */
+}
+.top .nav ul{
+    width: 700px;
+    height: 80px;
+    margin-top:20px;
+    margin-bottom:10px;
+    display: flex;
+    float:right;    /* 将选项放入最右边 */
+}
+.top .nav ul li{
+	margin-top:50px;
+	list-style: none;    /* 将列表前面的序号消除 */
+    
+	padding-right: 10px;
+}
+.top .nav ul li a{
+    position: relative;    /* 相对位置 */
+    display: block;    /* 呈块状 */
+    margin: 10px 20px;
+    padding-top: 8px;
+    text-decoration: none;    /* 消除下划线 */
+    color:black;
+    font-weight: 700;    /* 文字宽度 */
+    transition: .2s;    /* 变换时间为0.5 */
+    text-align: center;
+}
+.top ul li a:hover{    /* 点击时框框变色 */
+    width: 100%;
+    height: 100%;
+    color: white;
+    background:rgb(0, 0, 0);
+}
+.title{
+    width: 900px;
+    margin: auto;
+    margin-top:100px;
+    color: aliceblue;
+}
+.title h1{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: #3F6580 solid 5px;    /* 加下划线 */
+}
+
+.container{
+    width: 900px;
+    align-content: center;    /* 元素位于容器的中心 */
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display:flex;    /* 弹性盒子，就是排列方式用它 */    
+    justify-content: space-between;    /* 均匀排列每个元素。首个元素放置于起点，末尾元素放置于终点 */
+    flex-wrap: wrap;    /* flex-wrap 属性规定flex容器是单行或者多行，同时横轴的方向决定了新行堆叠的方向 */
+}
+.container .box{
+    position: relative;    /* 定义相对位置，并进行改变 */   
+    width: 200px;
+    height:250px;
+    background:rgba(83, 90, 231, 0.2);
+    padding:50px 20px 20px 50px;
+    box-shadow: 0 15px 45px rgba(0,0,0,1);    /* 盒子阴影 */
+    transform: translate(20px);    /* 从左边移动20个像素 */
+    transition: .5s;    /* 悬停时改变所需要的时间 */
+}
+.container .box:hover{
+    /* 悬停时变化构造 */
+    background: rgba(7, 7, 7, 0.5);
+    background-size:cover;
+}
+.container .box h2{
+    color: aliceblue;
+}
+.container .box p{
+    color: aliceblue;
+    height: 150px;
+    line-height: 150%;
+    text-align: center;
+    font-family:楷体,sans-serif;
+    font-size: 35px;;
+    font-weight: 200;    /* 文字粗细 */
+
+}
+.container  a{
+    text-decoration: none;
+    /* 消除下划线 */
+}

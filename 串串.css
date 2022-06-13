@@ -1,0 +1,64 @@
+body{
+    align-items: center;
+    background: #677c88;
+    background: url("../资源/串串01.webp");
+    background-size: cover;
+}
+.container{
+    display: flex;
+    width: 450px;
+    padding: 250px;
+    align-items: center;
+
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height:250px;
+    background:rgba(167, 156, 156, 0.4);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 202px rgba(243, 239, 239, 0.4);
+    transition: 0.5s;
+}
+.container .card:hover{
+    height: 700px;
+    width: auto;
+    background:#f1f1f2;
+    background-size: cover;
+    opacity: 0.6;    /* 图片透明 */
+
+}
+.container ,.card .imgBx{
+    position: relative;
+    width:260px;
+    height: 260px;
+    top: -60px;
+    left: 0px;
+    box-shadow: 0 5px 20px rgba(239, 233, 233, 0.3);
+}
+.container .card .imgBx img{
+    width:100%;
+    height:100%;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: rgb(15, 15, 16);
+    visibility: hidden;
+    opacity:0;     /* 渐变的东西 */
+
+    transition:0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1; 
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+.container  a{
+    text-decoration: none;
+    /* 消除下划线 */
+}
